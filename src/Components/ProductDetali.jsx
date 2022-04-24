@@ -9,7 +9,6 @@ const ProductDetali = () => {
     const proid = useParams()
     let filterID = Data.filter(item => item.id === Number(proid.id))
     const product = filterID[0]
-
     const dispaatch = useDispatch()
 
     const hadleCart = (product) => {

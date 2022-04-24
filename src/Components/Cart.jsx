@@ -7,9 +7,8 @@ const Cart = () => {
     const { data } = useSelector((state) => state.data)
     const dispatch = useDispatch()
 
-    const hadleClose  = (item) => {
-        console.log(item)
-      dispatch(DeletItem({item}))
+    const hadleClose  = (Itenid) => {
+      dispatch(DeletItem({Itenid}))
     }
 
     const CartEmpty = () => {

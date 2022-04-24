@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const cartSlice = createSlice({
-    name: "cartReducer",
+    name: "data",
     initialState:{
         data:[]
     },
@@ -11,8 +11,8 @@ const cartSlice = createSlice({
            state.data.push(action.payload)
         },
 
-        DeletItem(state, action){
-           console.log(state)
+        DeletItem(state , action){
+           state.data = state.data.filter(item => item.product.id !== action.payload.Itenid)
         }
     }
 })

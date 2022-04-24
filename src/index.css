@@ -33,3 +33,28 @@ code {
 .product img:hover{
    transform: scale(1.1);
 }
+
+.name a{
+  text-decoration: none;
+}
+
+.itemBtn{
+  display: flex;
+}
+
+.item{
+   justify-content: space-between;
+}
+
+@media(max-width:992px){
+  .item{
+     display: flex;
+  }
+}
+
+@media(max-width:570px){
+  .item{
+     display: flex;
+     flex-direction: column-reverse
+  }
+}
